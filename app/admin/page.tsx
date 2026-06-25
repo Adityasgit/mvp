@@ -115,7 +115,7 @@ export default function AdminPage() {
   const formPanel = (
     <div className="flex-1 overflow-y-auto bg-gray-50">
       {toolbar}
-      <div className="p-4 space-y-4 max-w-2xl mx-auto">
+      <div className="p-4 pb-8 space-y-4 max-w-2xl mx-auto">
         {showForm ? (
           <div className="bg-white rounded-lg border border-gray-200 p-4">
             <FeatureForm
@@ -172,7 +172,7 @@ export default function AdminPage() {
       {/* ── Mobile: tabbed ── */}
       <div className="flex flex-col md:hidden h-[calc(100vh-56px)]">
         {/* Content area */}
-        <div className="flex-1 overflow-hidden">
+        <div className="flex-1 flex flex-col overflow-hidden">
           {mobileTab === "list" ? listPanel : formPanel}
         </div>
 
