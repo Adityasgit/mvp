@@ -50,7 +50,7 @@ export default function GeoJsonImporter({ onImport }: Props) {
             onChange={(e) => setText(e.target.value)}
             rows={6}
             placeholder='{ "type": "FeatureCollection", "features": [...] }'
-            className="w-full px-3 py-2 text-xs font-mono border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 text-sm font-mono border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           {status && (
             <p

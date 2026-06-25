@@ -144,7 +144,7 @@ export default function FeatureForm({ feature, onSave, onCancel }: Props) {
           <input
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 text-base md:text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 
@@ -153,7 +153,7 @@ export default function FeatureForm({ feature, onSave, onCancel }: Props) {
           <select
             value={geometryType}
             onChange={(e) => setGeometryType(e.target.value as GeometryType)}
-            className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 text-base md:text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             {GEO_TYPES.map((t) => <option key={t} value={t}>{t}</option>)}
           </select>
@@ -164,7 +164,7 @@ export default function FeatureForm({ feature, onSave, onCancel }: Props) {
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value as FeatureCategory)}
-            className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 text-base md:text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             {CATEGORIES.map((c) => <option key={c} value={c}>{c}</option>)}
           </select>
@@ -191,7 +191,7 @@ export default function FeatureForm({ feature, onSave, onCancel }: Props) {
             type="number"
             value={floor}
             onChange={(e) => setFloor(Number(e.target.value))}
-            className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 text-base md:text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 
@@ -200,7 +200,7 @@ export default function FeatureForm({ feature, onSave, onCancel }: Props) {
           <input
             value={blockCode}
             onChange={(e) => setBlockCode(e.target.value)}
-            className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 text-base md:text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 
@@ -210,7 +210,7 @@ export default function FeatureForm({ feature, onSave, onCancel }: Props) {
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             rows={2}
-            className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 text-base md:text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
       </div>
@@ -224,7 +224,7 @@ export default function FeatureForm({ feature, onSave, onCancel }: Props) {
               value={arLabel}
               onChange={(e) => setArLabel(e.target.value)}
               placeholder={name || "label"}
-              className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 text-base md:text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -232,7 +232,7 @@ export default function FeatureForm({ feature, onSave, onCancel }: Props) {
             <input
               value={arIcon}
               onChange={(e) => setArIcon(e.target.value)}
-              className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 text-base md:text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -243,7 +243,7 @@ export default function FeatureForm({ feature, onSave, onCancel }: Props) {
               max={5}
               value={priority}
               onChange={(e) => setPriority(Number(e.target.value))}
-              className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 text-base md:text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div className="flex flex-col gap-1.5 pt-1">
